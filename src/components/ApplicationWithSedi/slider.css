@@ -1,0 +1,46 @@
+.carousel-root{
+    width: 1200px;
+}
+@media (max-width:1200px) {
+    .carousel-root{
+        width: 900px;
+    }
+}
+@media (max-width:900px) {
+    .carousel-root{
+        width: 600px;
+    }
+}
+@media (max-width:600px) {
+    .carousel-root{
+        width: 400px;
+    }
+}
+@media (max-width:400px) {
+    .carousel-root{
+        width: 300px;
+    }
+}
+
+/* Left arrow */
+.carousel.carousel .control-arrow.control-prev {
+    /* Add your custom styles here */
+    /* For example, you can change the color, size, or background */
+    background-color: #5f709e13;
+    color: #fff;
+    font-size: 54px;
+  }
+  
+  /* Right arrow */
+  .carousel.carousel .control-arrow.control-next {
+    /* Add your custom styles here */
+    /* For example, you can change the color, size, or background */
+    background-color: #f5b01c1a;
+    color: #fff;
+    font-size: 54px;
+  }
+  .application-container {
+    background: linear-gradient(347deg, #828FB2 0%, rgba(130, 143, 178, 0.00) 100%);
+    padding: 16px;
+  }
+  

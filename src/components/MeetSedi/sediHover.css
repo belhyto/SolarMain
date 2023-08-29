@@ -1,0 +1,61 @@
+.meet-sedi {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.2s; 
+}
+.font-medium {
+  /* Add any styles you want for the subheading */
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.4s; /* Add a 0.4s delay to the subheading */
+}
+
+.sedi-hover-card-container {
+  width: 100%;
+  min-height: 100vh; /* Use min-height instead of height */
+  background-image: linear-gradient(90deg, #5F709E, #F8F9FB);
+ 
+}
+
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: radial-gradient(circle at top left, #fffef8, #ffffff);
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.card-background::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 150%;
+  background: #fff1cb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100% 100% 100% 100%; /* Create a circle with border-radius */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 0 50%);
+  transform: rotate(-45deg); 
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in animation when the 'visible' class is added */
+.sedi-hover-card-container.visible {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: calc(0.6s + 0.3s * (var(--index))); 
+}

@@ -1,0 +1,39 @@
+.hero-container {
+  position: relative;
+  height: 100vh;
+}
+
+.banner-text {
+  height: 100%;
+  padding: 200px 120px; /* Adjust the top and bottom padding as needed */
+  position: center;
+  z-index: 1; 
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    background-position: top;
+  }
+}
+
+/* Add animation to the hero text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Add animation to the button with delay */
+.custom-button {
+  animation: fadeIn 2s ease-in-out 0.5s;
+}
+
