@@ -4,16 +4,29 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/system';
 import { Stack } from '@mui/material';
 import axios from 'axios';
-import ReCAPTCHA from 'react-google-recaptcha'; 
+import ReCAPTCHA from 'react-google-recaptcha';
 
-type Props = {}
+type ContactFormProps = {
+  onClose: () => void; // onClose prop is a function that closes the form
+};
 
 const FormContainer = styled('div')`
-  display: flex;
-  flex-direction: column;
-  max-width: 700px;
-  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background:rgba(86, 99, 143, 0.9);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex; /* Add this to make the children flex items */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Center child elements horizontally */
+  align-items: center; /* Center child elements vertically */
 `;
+
 const Input = styled('input')`
   background-color: rgba(255, 255, 255, 0.1);
   backdropFilter: "blur(5px)";
@@ -21,7 +34,7 @@ const Input = styled('input')`
   border: 2px solid white;
   border-radius: 4px;
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   font-size: 16px;
 `;
 
@@ -36,115 +49,119 @@ const TextArea = styled('textarea')`
   font-size: 16px;
 `;
 
-const MuiBaseInput ={
-  "&.MuiInputBase-input": {
-    color: "#fff !important",
-  }
-}
+const CloseButton = styled(Button)`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+`;
 
-const ContactForm = () => {
+const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [phone, setPhone] = useState('');
   const [comment, setComment] = useState('');
-  const [isChecked, setIsChecked] = useState(false); // State for checkbox
-  const [recaptchaValue, setRecaptchaValue] = useState(''); 
+  const [isChecked, setIsChecked] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState('');
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log("formdata: ", name, email, subject, phone, comment);
 
+ 
     if (!recaptchaValue) {
       alert("Please complete the reCAPTCHA verification");
       return;
     }
 
     try {
-      // Send form data to Formspree endpoint
       await axios.post('https://formspree.io/f/moqodkrd', {
         name,
         email,
         subject,
         phone,
         comment,
-        recaptchaValue, 
+        recaptchaValue,
       });
 
-      // You can add a success message here or any other logic you need.
       console.log('Form data sent successfully to Formspree');
     } catch (error) {
       console.error('Error sending form data to Formspree:', error);
-      // Handle error or display an error message to the user.
     }
 
-    // Clear the form fields after submission
     setName('');
     setEmail('');
     setSubject('');
     setPhone('');
     setComment('');
-    setIsChecked(false); // Reset the checkbox
-    setRecaptchaValue(''); 
+    setIsChecked(false);
+    setRecaptchaValue('');
+    onClose(); // Close the form when submission is successful
   };
 
   return (
-    <div style={{ background: '#5F709E', padding: '30px' }}>
+    <div style={{ background: '#5F709E', padding: '10px' }}>
       <Stack>
-        <Stack padding={"36px 16px"}>
-          <p className="text-4xl text-center p-4 font-bold" style={{ fontFamily: 'Conthrax Sb' }}>
-            CONTACT US FOR MORE INFORMATION
-          </p>
-        </Stack>
         <form onSubmit={handleSubmit}>
           <FormContainer>
+            <CloseButton onClick={onClose} variant="outlined" sx={{ color: 'white' }}>
+              X
+            </CloseButton>
+            <Stack padding={"0px 0px"}>
+              <p className="text-4xl text-center p-4 font-bold" style={{ fontSize: '25px', fontFamily: 'Conthrax Sb' }}>
+                CONTACT US FOR MORE INFORMATION
+              </p>
+            </Stack>
             <Input
+              style={{ marginBottom: '12px', width: '100%', height: '30px' }}
               type="text"
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <Input
+              style={{ marginBottom: '12px', width: '100%', height: '30px' }}
               type="email"
               placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <Input
+              style={{ marginBottom: '12px', width: '100%' }}
               type="text"
               placeholder="Subject"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             />
             <Input
+              style={{ marginBottom: '12px', width: '100%', height: '30px' }}
               type="text"
               placeholder="Phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
             <TextArea
+              style={{ marginBottom: '12px', width: '100%' }}
               placeholder="Comments"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               rows={5}
             />
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ marginBottom: '12px', width: '100%', height: '30px' }}>
               <input
                 type="checkbox"
                 checked={isChecked}
                 onChange={() => setIsChecked(!isChecked)}
               />
-             <label
-  htmlFor="checkbox"
-  style={{
-    marginLeft: '8px',
-    color: 'white', // Change the color to white
-    padding: '4px 8px', // Add spacing around the label
-  }}
->
-  Please select for being our Value Added Resourcer (VAR)
-</label>
-
+              <label
+                htmlFor="checkbox"
+                style={{
+                  marginLeft: '8px',
+                  color: 'white',
+                  padding: '4px 8px',
+                }}
+              >
+                Please select for being our Value Added Resourcer (VAR)
+              </label>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '12px' }}>
               <div style={{ transform: 'scale(0.8)' }}>
@@ -158,20 +175,21 @@ const ContactForm = () => {
               type="submit"
               variant="contained"
               sx={{
-                fontSize: "24px",
+                fontSize: "14px",
+                
                 textAlign: 'center',
-                fontWeight: 700,
-                color: "#fff", // Change the color of the button text
+                fontWeight: 70,
+                color: "#fff",
                 "&.MuiButton-root": {
                   background: 'linear-gradient(197deg, #297FFF 0%, #97ADFD 100%)',
                   borderRadius: '20px',
                   '&:hover': {
-                    color: '#2B2B2B' // Change to desired hover color
+                    color: '#2B2B2B',
                   },
                   '&:focus': {
-                    color: '#7f95e5' // Change to desired focus color
-                  }
-                }
+                    color: '#7f95e5',
+                  },
+                },
               }}
             >
               Submit

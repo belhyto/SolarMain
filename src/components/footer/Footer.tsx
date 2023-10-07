@@ -28,23 +28,24 @@ const Footer = (props: Props) => {
         <div style={{ display: "flex" }}>
           <Column>
             <h4 style={{fontFamily: 'Conthrax Sb', textAlign: 'center'}}>Corporate Office</h4>
-            <p style={{textAlign: 'center'}}>17 Im Wiesental, 75031 Eppingen, Germany</p>
+            <p style={{textAlign: 'center', fontFamily: 'Conthrax Sb'}}>17 Im Wiesental, 75031 Eppingen</p>
+            <p style={{textAlign: 'center', fontFamily: 'Conthrax Sb'}}>Germany</p>
           </Column>
           <Column>
             <h4 style={{fontFamily: 'Conthrax Sb', textAlign: 'center'}}>Website</h4>
-            <p  style={{textAlign: 'center'}}>  <Link href={"/"} >www.sedi-solar.com</Link></p>
+            <p  style={{textAlign: 'center', fontFamily: 'Conthrax Sb'}}>  <Link href={"/"} >www.sedi-solar.com</Link></p>
            
           </Column>
           <Column>
             <h4 style={{fontFamily: 'Conthrax Sb', textAlign: 'center'}} >Email</h4>
-            <p style={{textAlign: 'center'}}>
+            <p style={{textAlign: 'center', fontFamily: 'Conthrax Sb'}}>
             info@sedi-solar.com
             </p>
          
           </Column>
         </div>
         <p style={{ marginTop: "100px", textAlign: "center" ,fontFamily: 'Conthrax Sb',}}>
-          Copyright © 2023 | SEDI Solar Energy
+          Copyright © 2023 | SEDI Solar 
         </p>
       </FooterContainer>
     </Box>

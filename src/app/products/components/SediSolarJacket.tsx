@@ -9,10 +9,9 @@ import powerjacket2  from "../../../../public/assets/powerjacket3.png"
 
 type Props = {}
 const paperCss = {
-
   minWidth:"200px",
   maxWidth:"280px",
-  height:"150px",
+  height:"250px",
   flexBasis: 'calc(90% / 3)',
   color: "#000",
   borderRadius: "4px",
@@ -29,8 +28,10 @@ const paperCss = {
   '@media (max-width: 800px)': {
       flexBasis: 'calc(100% / 1)',
   }
-},
-}
+}, 
+} 
+
+const labels = ["SEDI Solar Jacket ", "SEDI Solar Jacket: Rear view (Without back Cover)", /* Add more labels as needed */];
 const SediSolarJacket = (props: Props) => {
   const images = [powerjacket1.src,powerjacket2.src]
   return (
@@ -40,38 +41,38 @@ const SediSolarJacket = (props: Props) => {
     justifyContent={"center"}
     maxWidth={1200}
     padding={"36px 16px"}
-  >
-    <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>The SEDI solar jacket</p>
-    <p className="text-base text-center p-4 font-bold">The most innovative Off Grid Solar Solution on the market today.</p>
-    <p className="text-sm text-center p-4 font-bold">Completely integrated Monocrystalline Si-cell based, long life solar energy solution for critical equipment on the field, requiring a very reliable and very low maintenance energy source 24/7.</p>
+  > 
+    <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>SEDI Solar Jacket</p>
+    <p className="text-base text-center p-4 font-semibold" style={{textAlign: "justify"}}>The most innovative off-grid solar solution on the market today.</p>
+    <p className="text-base text-center p-4 font-semibold" style={{textAlign: "justify"}}>Complete and integrated Solar power source mounted on any pole. This product is ideal for powering small but critical components in the field such as CCTV cameras, transmitters, sensors, 4G and WAN devices, measuring devices etc. SEDI Solar Jackets provide reliable uninterrupted power 24x7, 365 days with little or no field maintenance required.</p>
 
     <Stack padding={'36px 12px'} direction={{md:'row',sm:'column',xs:'column'}} gap={6}>
-    <Carousel className='solar-jacket' showArrows={true} autoPlay={true} infiniteLoop={true}>
-        {images.map((item,id)=>{
-            return (
-                <SSlides key={id}  img={item}/>
-            )
-        })}
-
-      </Carousel>
+    <Carousel className="solar-jacket" showArrows={true} autoPlay={true} infiniteLoop={true}>
+  {images.map((item, id) => {
+    const label = labels[id]; // Get the corresponding label for this image
+    return (
+      <SSlides key={id} img={item} label={label} />
+    );
+  })}
+</Carousel>
       <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'} gap={3}>
             <Paper sx={paperCss} >
-                <p>Worldwide Patented Micro-lens surface nanotechnology Solar PV Modules to support vertical installation on most street poles.</p>
-            </Paper>
+                <p>Unique Micro-lens surface technology Solar PV Modules to support vertical installation on almost any pole. By nature of its vertical streamline design, the product is virtually maintenance free and offers very good aerodynamics to reduce wind resistance.</p>
+            </Paper> 
             <Paper sx={paperCss} >
-                <p>Toughened, treated Solar modules resistant to scratch or damage. Flexible nature prevents damage during transport and installation.</p>
-            </Paper>
+                <p>Toughened, treated Solar modules are resistant to scratch or damage. Flexible nature prevents damage during transport and installation. The Solar Jacket is stackable on the same pole for additional power requirements.</p>
+            </Paper> 
             <Paper sx={paperCss} >
-                <p>Battery, Solar controller, Data switch all installed within the Solar Jacket frame, providing shelter from the weather as well as protection from vandalism </p>
-            </Paper>
+                <p>Battery, Solar controller, and Data switch are all installed within the Solar Jacket frame, high up on the pole, providing not only shelter from the weather, but also protection from vandalism. Enough space to add additional components such as data storage devices, WAN/4G routers etc.</p>
+            </Paper> 
             <Paper sx={paperCss} >
-                <p>Vertical Panel design not only greatly reduces dust collection, but also reduces wind resistance, and shear force on the structure and support pole</p>
-            </Paper>
+                <p>SEDI Solar Jacket is designed to allow nearly 12 hours of direct sunlight as well as diffused sunlight providing more power generation than conventional panels of the same size. A single SEDI Jacket produces 1.44kW power per day. SEDI Jackets use very long life LiFePO4 Batteries to provide 24x7, 365 day reliable and uninterrupted power source for critical in-field devices.</p>
+            </Paper> 
             <Paper sx={paperCss} >
-                <p>Design allows access to Sunlight from East and West, as well as diffused sunlight providing more power generation than conventional panels of the same size. </p>
-            </Paper>
+                <p>SEDI Solar Jackets can be operated from -20˚ C to +60 ˚ C. The Jackets are designed with unique features to handle the harshest climates including dessert, snow, hail and wind. The SEDI solar Jacket offers a 10 year product warranty covering controller, hardware and software*.  </p>
+            </Paper> 
             <Paper sx={paperCss} >
-                <p>45 Year Linear Performance Warranty on Solar Panels, Easy Installation, low cost of ownership. </p>
+                <p>SEDI proprietary User Software is loaded within the Solar controller and through the embedded web-box operators can remote connect to one or more SEDI Solar jackets for monitoring, data gathering and remote control. SEDI Software offers open APIs to integrate with third party products like data switches and sensors. </p>
             </Paper>
            
         </Stack>

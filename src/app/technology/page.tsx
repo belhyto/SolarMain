@@ -11,9 +11,9 @@ type Props = {}
 const Technology = (props: Props) => {
   return (
     <Stack>
+      <ChallengesByPV />
       <PVModules />
       <UniqueTech />
-      <ChallengesByPV />
       <Testing />
     </Stack>
   )

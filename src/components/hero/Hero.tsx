@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
         >
           <p className='meet-sedi' style={{  fontSize: '60px', textAlign: 'center',fontFamily: 'Conthrax Sb' }}>DURABLE</p>
           <p className='meet-sedi' style={{ fontSize: '60px', textAlign: 'center',fontFamily: 'Conthrax Sb' }}>RELIABLE</p>
-          <p className='meet-sedi' style={{ fontSize: '60px', textAlign: 'center',fontFamily: 'Conthrax Sb' }}>POWERFUL</p>
+          <p className='meet-sedi' style={{ fontSize: '60px', textAlign: 'center',fontFamily: 'Conthrax Sb' }}>FLEXIBLE</p>
           <Box sx={{ textAlign: 'center', mt: 2 }}>
             <Button
               sx={{

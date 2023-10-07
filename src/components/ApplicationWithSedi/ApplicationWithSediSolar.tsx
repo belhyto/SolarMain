@@ -16,19 +16,19 @@ type Props = {}
 
 const ApplicationWithSediSolar = (props: Props) => {
     const title1 = 'Border security or surveillance'
-    const detail1 = 'City planners, Homeland security, law enforcement and other stakeholders can secure critical spots in their city, country and borders with no worry for power, maintenance using our patented and unique SEDI Single Solar Jacket, SEDI Double Solar Jacket or SEDI Towers'
+    const detail1 = 'City planners, Homeland security, law enforcement and other stakeholders can secure critical spots in their city, country and borders with CCTV or sensors employing the reliable, rugged, low maintenance SEDI Solar Jackets or SEDI Solar Towers'
     const image1 = '/assets/SrilankaPoleJacket.png'
-    const title2 = 'Light weight rooftops'
-    const detail2 = 'Sedi light weight flexible solar PV modules provides ideal energy generation on even the most curved architectural surfaces without need for any reinfcement thanks to its ultralight weight of less than 2.5kg per sq mtr.'
+    const title2 = 'Light weight rooftops and facades	'
+    const detail2 = 'SEDI Solar light weight flexible PV modules can provide energy generation on any architectural shape, flat or curved. or even on vertical facades.  It can also be installed on the lightweight roofs like carports and huts, without need for reinforcement, by virtue of its ulta-light weight (less than 2 ½ Kg/sqmtr), flexible, non-glass structure. '
     const image2 = '/assets/trainstation.jpg'
     const title3 = 'Sedi solar for Greenhouses'
-    const detail3 = 'Sedi PV modules are ideal for Greenhouse power since they can be installed on the lightweight framework of the Greenhouse without needing any additional reinfcemnet. Thanks to high efficiency of nearly 20% Sedi modules can provide adequate power for Greenhouse with only one third roof coverage allowing essential sunlight through for good plant growth'
+    const detail3 = 'SEDI PV modules are an ideal source for Greenhouse power since they can be installed on the lightweight framework of the Greenhouse without the need for any additional reinforcement. Offering an efficiency of nearly 20%, SEDI PV modules provide adequate power for Greenhouses with suitable coverage allowing essential sunlight through for good plant growth'
     const image3 = '/assets/bahrgreenhouse.jpg'
     const title4 = 'Eco Sustainable Homes'
-    const detail4 = 'For providing grid tied or completely off grid power, using SEDI Solar ultra- lightweight, thin and flexible PV Modules, installation is easy and maintenance is minimal with long term guarantees and peace of mind'
+    const detail4 = 'SEDI Solar ultra- lightweight, thin and flexible PV Modules, provide easy installation and reliable power for Eco-Sustainable homes like holiday homes, portacabins and natural reserve cabins. Combining reliable Lithium battery based energy storage systems with SEDI Solar PV Modules offers a reliable and convenient long term energy source with low maintenance and peace of mind'
     const image4 = '/assets/solarcanopy.jpeg'
     const title5 = 'E-vehicles'
-    const detail5 = 'Installing thin flexible ultralight SEDI Solar modules flush on roofs of vehicles - be they Golf carts, Large Semis, Boats or even Trains helps reduce carbon footprint greatly without compromising performance or reliability of the vehicle. It also saves a huge amount of fuel per year.'
+    const detail5 = 'The thin, ultralight flexible SEDI Solar modules can be riveted or glued flush on roofs of vehicles, such as Golf carts, Large 18 Wheeler trucks, Boats or even Trains to provide supplementary power, and helps to reduce the carbon footprint greatly without compromising performance or reliability of the vehicle. It also saves a huge amount of fuel per year.'
     const image5 = '/assets/golfcart.png'
   return (
     <Stack direction={'column'} paddingTop={0} sx={{ background: 'linear-gradient(155deg, #ffff, #5F709E)', padding: '16px' }}>

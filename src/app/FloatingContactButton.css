@@ -1,0 +1,17 @@
+.floating-contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5d9eff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  } 
+  .floating-contact-button:hover {
+    background-color: #1b55a0;
+  }
+  

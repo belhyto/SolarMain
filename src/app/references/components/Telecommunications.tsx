@@ -11,7 +11,7 @@ type Props = {}
 
 const Telecommunications = (props: Props) => {
   const images1 = [tele1.src, tele2.src, tele3.src, tele4.src, tele5.src]
-  const detail1 = 'SEDI Jackets and Towers are used extensively in remote locations or locations where main grid power is expensive or impossible to install. Only SEDI can provide the high reliability, low maintenance guarantees that Telecom operators demand, since their equipment needs to be operational 24/7/365.'
+  const detail1 = 'SEDI Jackets and Towers are used extensively in remote locations or locations where main grid power is expensive or impossible to install. Only SEDI technology and design can provide the high reliability, low maintenance guarantees that Telecom operators demand, since their equipment needs to be operational 24/7/365. SEDI Jackets and towers by virtue of their vertical alignment require very little cleaning and occupy negligible real estate.'
 
   return (
     <div

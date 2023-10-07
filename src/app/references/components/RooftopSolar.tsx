@@ -11,7 +11,7 @@ type Props = {}
 
 const RooftopSolar = (props: Props) => {
   const images1=[roof1.src,roof2.src,roof3.src,roof4.src,roof5.src]
-  const detail1='SEDI Solar PV Modules are installed on a wide range of rooftops where conventional solar panels are either too heavy, cannot conform to the curves and shapes, do not get the correct angle of installation, are subject to stress of high wind speeds or damage easily due to hailstorms or sand storms. In some places SEDI PV modules are installed simply because they provide a much more aesthetic cladding over a roof and in most cases invisible from the ground.'
+  const detail1='SEDI Solar PV Modules are installed on a wide range of rooftops where conventional solar panels are either too heavy, cannot conform to the curves and shapes, do not get the correct angle of installation, are subject to stress of high wind speeds or could be damaged easily due to hailstorms or sand storms. In some projects, SEDI PV modules are installed on rooftops simply because they provide a much more aesthetic cladding over a roof and in most cases invisible from the ground.'
 
   return (
     <div

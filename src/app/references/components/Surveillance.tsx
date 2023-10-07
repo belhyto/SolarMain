@@ -9,7 +9,7 @@ type Props = {}
 
 const Surveillance = (props: Props) => {
   const images1=[surv1.src,surv2.src,surv3.src,surv4.src]
-  const detail1='SEDI Solar Jackets are unsurpassed in their reliability, ruggedness, vandal resistance and very low maintenance when it comes to installing critical surveillance equipment such as CCTV and sensors especially for surveillance and homeland security. Operators worldwide are switching to SEDI Solar Jackets after facing huge maintenance and vandalism problems with conventional solar systems.'
+  const detail1='SEDI Solar Jackets are unsurpassed in their reliability, ruggedness, vandal resistance and very low maintenance when it comes to installing critical surveillance equipment such as CCTV and sensors especially for surveillance, border security and homeland security. Operators worldwide are switching to SEDI Solar Jackets after discovering the huge benefits they get with low maintenance, longer MTBFs, vandal-resistant design and remote operation and monitoring capability offered by the SEDI Jacket.'
 
   return (
     <Stack

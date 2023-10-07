@@ -9,8 +9,8 @@ type Props = {
 const TradeCards = ({img}: Props) => {
   return (
     <Stack sx={{width:300,height:'auto'}}>
-        <img 
-        style={{width:"100%",height:"400px"}}
+        <img  
+        style={{width:"100%",height:"400px", objectFit: 'contain'}}
         src={img}
         alt='img'
         />

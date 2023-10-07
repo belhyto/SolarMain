@@ -23,7 +23,7 @@ const CardWithCarousel = ({ images, details, direction }: Props) => {
                     })}
                 </Carousel>
                 <div style={{ borderRadius: '50px' }}>
-                    <p>{details}</p>
+                    <p style={{textAlign: "justify"}}>{details}</p>
                 </div>
             </Stack>
         )
@@ -31,7 +31,7 @@ const CardWithCarousel = ({ images, details, direction }: Props) => {
         return (
             <Stack maxWidth={1200} sx={{ width: "100%" }} direction={{ md: 'row', sm: `${(direction === 'left') ? 'column' : 'column-reverse'}`, xs: `${(direction === 'left') ? 'column' : 'column-reverse'}` }} justifyContent={'center'} alignItems={'center'} padding={'20px 12px'} gap={6}>
                 <div style={{ borderRadius: '100px' }}>
-                    <p>{details}</p>
+                    <p style={{textAlign: "justify"}}>{details}</p>
                 </div>
                 <Carousel className='card-with-carousel' showArrows={true} autoPlay={true} infiniteLoop={true}>
                     {images.map((item, id) => {

@@ -38,7 +38,7 @@ const Slides = ({ title, detail, img }: Props) => {
           </Box>
           <Stack direction={'column'} justifyContent={'center'} sx={{ height: '100%' }} spacing={2}>
             <p className='text-2xl font-semibold '>{title}</p>
-            <p>{detail}</p>
+            <p style={{textAlign: "justify"}}>{detail}</p>
           </Stack>
         </Stack>
         {/* Add the pseudo-element for the background with rounded corners and the gradient */}

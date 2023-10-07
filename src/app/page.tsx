@@ -1,4 +1,5 @@
 "use client"
+
 import ApplicationWithSediSolar from '@/components/ApplicationWithSedi/ApplicationWithSediSolar'
 import ContactForm from '@/components/ContactUs/ContactUs'
 import GlobalPresence from '@/components/GlobalPresence/GlobalPresence'

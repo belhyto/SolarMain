@@ -9,7 +9,7 @@ type Props = {}
 
 const OilNGas = (props: Props) => {
   const images1=[oil1.src,oil2.src]
-  const detail1='Remote oil field sensors and transmission units are crucial to smooth operation in the O&G industry. SEDI Solar Jackets provides uninterrupted energy with a high level of reliability and comfort to the operators who can count on thousands of hours of maintenance free operation and of course just as valuable savings in money.'
+  const detail1='Remote oil field sensors and transmission units are crucial to smooth operation in the O&G industry. SEDI Solar Jackets provides uninterrupted energy with a high level of reliability and comfort to the operators who can count on thousands of hours of maintenance free operation and of course, just as valuable savings in money.'
 
   return (
 <div

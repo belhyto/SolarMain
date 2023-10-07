@@ -30,7 +30,7 @@ const HoverCard = ({ title, detail, img }: Props) => {
     >
       <Card
         sx={{
-          width: 270, // Set a constant width for the card
+          width: 290, // Set a constant width for the card
           height: 350, // Set a constant height for the card
           transition: 'transform 0.5s',
           transform: isHovered ? 'rotateY(180deg)' : 'rotateY(0)',
@@ -64,11 +64,11 @@ const HoverCard = ({ title, detail, img }: Props) => {
                 variant="h5"
                 textAlign="center"
                 gutterBottom
-                sx={{ fontFamily: 'sans-serif', fontWeight: 'bold' }}
+                sx={{textAlign: "justify", fontFamily: 'sans-serif', fontWeight: 'bold' }}
               >
                 {title}
               </Typography>
-              <p style={{ fontSize: '12px' }}>{detail}</p>
+              <p style={{ textAlign: "justify", fontSize: '12px' }}>{detail}</p>
             </Box>
           ) : (
             <>

@@ -9,7 +9,7 @@ type Props = {}
 
 const VehiclePower = (props: Props) => {
   const images1=[vehic1.src,vehic2.src,vehic3.src]
-  const detail1='SEDI PV Modules are ideal for vehicles such as cars and buses since they are thin flexible and flush mounted on the roof, so there is no danger of them creating a drag or blowing off while the vehicle is in motion. Further as SEDI PV Modules are completely waterproof, they are perfectly suited for installation on even boats and rigs for reliable long life operation.'
+  const detail1='SEDI PV Modules are ideal for vehicles such as cars and buses since they are light weight, slim and flexible and can be flush mounted on the roof. Such an installation offers very low wind resistance or drag while the vehicle is in motion. Further as SEDI Solar Modules are completely waterproof, they are perfectly suited for installation on even boats and off shore Oil rigs for reliable long life operation.'
 
   return (
     <Stack

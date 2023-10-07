@@ -20,9 +20,11 @@ const Testing = (props: Props) => {
              <div style={{ background: '#DCE0EA', padding: "100px" }}>
             <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>
                 Testing
-            </p>
-            <p className='text-center'>SEDI Solar PV Modules are tested rigorously to meet international standards and especially German standards of safety and performance. SEDI Modules are certified for IEC 61215/61730/61701/62804-1/62716, EN-13501-5
+            </p> 
+           <p className="text-base text-center p-4 font-semibold">SEDI Solar PV Modules are tested rigorously to meet international standards and especially German standards of safety and performance. SEDI Modules are certified for IEC 61215/61730/61701/62804-1/62716, EN-13501-5
                 In addition, SEDI Modules undergo rigorous physical testing to ensure its flexibility and ruggedness is sustainable even in the most adverse conditions throughout its guarantee period.</p>
+                <p className="text-base text-center p-4 font-semibold">SEDI Modules are certified for IEC 61215/61730/61701/62804-1/62716, EN-13501-5</p>
+                <p className="text-base text-center p-4 font-semibold">In addition, SEDI Modules undergo rigorous physical testing to ensure its flexibility and ruggedness is sustainable even in the most adverse conditions throughout its guarantee period.</p>
             <Stack direction={{md:'row',sm:'column',xs:'column'}}>
                 <TestCard image={image1} detail={detail1}/>
                 <TestCard image={image2} detail={detail2}/>

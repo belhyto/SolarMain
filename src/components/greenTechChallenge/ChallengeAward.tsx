@@ -55,28 +55,27 @@ const ChallengeAward = (props: Props) => {
             </Box>
             {showDetails && (
               <>
-                <p className='text-xl'>
-                The GreenTech Challenge 2022 trophy was awarded to SEDI Solar Distributor in Greece AA Systems for developing an innovative completely Off-Grid Early Warning System for Forest Fires using the reliability of the SEDI Jacket and Thermal sensing cameras combined with their rugged in-house build alarm panel, sensor systems and transmitters.
+                <p className='text-xl' style={{textAlign: "justify"}}>
+The GreenTech Challenge European 2022 trophy for the most innovate, green and environmentally useful technology was awarded to SEDI Solar Distributor in Greece, AA Systems for developing an innovative completely Off-Grid Early Warning System for Forest Fires using the reliability of the SEDI Jacket and Thermal sensing cameras combined with our partners in-house developed rugged alarm panel, sensor systems and transmitters. The complete system is labled as “Ananias” in Greek
                 </p>  
-                <p className='text-xl'>
+                <p className='text-xl'style={{textAlign: "justify"}}>
                 Forest fires cause immeasurable losses each year around the world economically, environmentally and last, but by no means the least, the deaths of humans, livestock and wildlife.
                 </p>
-                <p className='text-xl'>The early warning system for Forest Fires works completely off grid, continuously sensing the ambient temperature levels viewed through the thermal cameras and raises alarm points as temperatures rise from Green (safe) to Amber (warning) to Red (danger) levels, sending data, alarm and video back to control room through 4G or radios enabling early response before a fire starts or gets out of hand. </p>
-                <p className='text-xl'>
-                The SEDI Solar Jacket provides 24/7/365 reliable energy to all the active components of the Early Warning System, with very little maintenance demands if any.
+                <p className='text-xl'style={{textAlign: "justify"}}>The early warning system for Forest Fires works completely off grid, continuously sensing the ambient temperature levels viewed through the thermal cameras and raises alarm points as temperatures rise from Green (safe) to Amber (warning) to Red (danger) levels, sending data, alarm and video back to control room through 4G or radios enabling early response before a fire starts or gets out of hand. </p>
+                <p className='text-xl'style={{textAlign: "justify"}}>
+                The SEDI Solar Jacket reliably provides 24/7/365 power to all the active components of the “Ananias” Forest-fire Early Warning System, with very little maintenance demands.
                 </p>
-                <p className='text-xl'>
-                The system won the European award for the most innovate, green and environmentally useful technology in 2022.
-                </p>
+               
               </>
             )}
+
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Button
                 onClick={handleButtonClick}
                 sx={{
                   width: 160,
                   fontSize: "18px",
-                  textAlign: 'center',
+                  textAlign: 'center',  
                   fontWeight: 700,
                   boxShadow:"80px",
                   color: "#fff", // Change the color of the button text
