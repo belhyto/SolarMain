@@ -18,7 +18,7 @@ const TestCard = ({image,detail}: Props) => {
       setIsHovered(false);
     };
   return (
-    <Box onMouseEnter={handleMouseEnterF} onMouseLeave={handleMouseLeaveF} padding={'28px 12px'} sx={{display:"flex",flexWrap:'wrap',width:"100%",justifyContent:"center",alignItems:"center"}}>
+    <Box onMouseEnter={handleMouseEnterF} onMouseLeave={handleMouseLeaveF} padding={'28px 2px'} sx={{display:"flex",flexWrap:'wrap',width:"100%",justifyContent:"center",alignItems:"center"}}>
       <Card
         sx={{
           maxWidth: 500,
@@ -26,7 +26,7 @@ const TestCard = ({image,detail}: Props) => {
           transition: "transform 0.5s",
           transform: isHovered ? "scale(1.1)" : "scale(1)",
           // backdropFilter:'blur(5px)',
-          padding:"16px 16px"
+          padding:"16px 1px"
         }}
       >
         <CardContent

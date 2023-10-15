@@ -15,12 +15,11 @@ const SolarContainer = (props: Props) => {
     alignItems={"center"}
     justifyContent={"center"}
     maxWidth={1200} 
-    padding={"36px 16px"}
+    padding={"36px 25px"}
   >
-
         <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>Solar Containers </p>
-        <p>SEDI Solar Containers are the worlds first and only fully mobile, rapidly deployable clean energy storage solutions (CLESS)that can be deployed on the field within 2 hrs and packed and loaded for transportation in less than half that time.</p>
-        <p>The SEDI Solar containers uses the  unique SEDI light weight, ruggedized PV modules which are installed on a bespoke  metal reinforced framework which is designed to be fully deployed manually by 2 personnel. </p>
+        <p  style={{textAlign: "justify"}}>SEDI Solar Containers are the worlds first and only fully mobile, rapidly deployable clean energy storage solutions (CLESS)that can be deployed on the field within 2 hrs and packed and loaded for transportation in less than half that time.</p>
+        <p  style={{textAlign: "justify"}}>The SEDI Solar containers uses the  unique SEDI light weight, ruggedized PV modules which are installed on a bespoke  metal reinforced framework which is designed to be fully deployed manually by 2 personnel. </p>
         <CardWithCarousel direction='left' images={images1} details={detail1}/>
         <p>SEDI Solar Containers can provide multiple power outputs of 12/24/48VDC, 230VAC and 110VAC based on customer requirements. </p>
     <p>The SEDI Solar containers are certified to be seaworthy by leading marine survey companies so that the container can ship conveniently worldwide. Easy to transport and mobilize, it can be moved on a large flatbed trailer or on a cargo ship.</p>

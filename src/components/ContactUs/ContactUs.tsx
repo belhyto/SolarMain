@@ -111,7 +111,7 @@ const ContactForm = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <Input
-              type="text"
+              type="text" 
               placeholder="Subject"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}

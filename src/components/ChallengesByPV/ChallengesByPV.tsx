@@ -13,7 +13,7 @@ const ChallengesByPV = (props: Props) => {
     style={{
       minHeight: "100vh", // Make the container at least full viewport height
       background: 'linear-gradient(90deg, #5F709E, #ffff)',
-      padding: "70px",
+      padding: "70px 1px",
     }}>
            <div
         style={{
@@ -21,7 +21,7 @@ const ChallengesByPV = (props: Props) => {
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
-          padding: "40px",
+         
         }}
       >
       <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>

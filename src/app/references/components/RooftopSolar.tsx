@@ -18,7 +18,7 @@ const RooftopSolar = (props: Props) => {
       style={{
         background: "linear-gradient(141deg, #FFFEEA 0%, #D9D9D9 100%)",
         width: "100%", // Ensure the container takes up full width
-        padding: "36px 16px",
+        padding: "36px 1px",
       }}
     >
     <Stack

@@ -17,7 +17,7 @@ const Testing = (props: Props) => {
     const detail3 = 'Image of SEDI Panels undergoing Wind tunnel tests'
     return (
         <Stack direction={"column"} alignItems={"center"} justifyContent={"center"}>
-             <div style={{ background: '#DCE0EA', padding: "100px" }}>
+             <div style={{ background: '#DCE0EA', padding: "30px 1px" }}>
             <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>
                 Testing
             </p> 

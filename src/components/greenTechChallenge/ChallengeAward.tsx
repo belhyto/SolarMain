@@ -19,15 +19,15 @@ const ChallengeAward = (props: Props) => {
         sx={{
          
           backgroundImage: 'radial-gradient(58.59% 101.47% at 103.01% -1.99%, #6878A3 0%, rgba(255, 255, 255, 0.00) 100%)', // Set the radial gradient as background image
-          padding: '50px',
+          padding: '50px 1px',
         }}
       >
         <Stack direction={{ lg: 'row', md: 'row', sm: 'column' }}>
           <Box
             sx={{
               width: { xs: '100%', sm: '70%' }, // Adjust width for different screen sizes
-              margin: '0 auto', 
-              display: "flex",
+              margin: '0 auto',
+              display: "flex", 
               justifyContent: "center",
               alignItems: "center",
               // Add the scaling effect to the container
@@ -55,7 +55,8 @@ const ChallengeAward = (props: Props) => {
             </Box>
             {showDetails && (
               <>
-                <p className='text-xl' style={{textAlign: "justify"}}>
+              
+                <p className='text-xl' style={{textAlign: "justify",   wordBreak: 'break-word'}}>
 The GreenTech Challenge European 2022 trophy for the most innovate, green and environmentally useful technology was awarded to SEDI Solar Distributor in Greece, AA Systems for developing an innovative completely Off-Grid Early Warning System for Forest Fires using the reliability of the SEDI Jacket and Thermal sensing cameras combined with our partners in-house developed rugged alarm panel, sensor systems and transmitters. The complete system is labled as “Ananias” in Greek
                 </p>  
                 <p className='text-xl'style={{textAlign: "justify"}}>

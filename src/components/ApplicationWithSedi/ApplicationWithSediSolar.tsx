@@ -31,7 +31,7 @@ const ApplicationWithSediSolar = (props: Props) => {
     const detail5 = 'The thin, ultralight flexible SEDI Solar modules can be riveted or glued flush on roofs of vehicles, such as Golf carts, Large 18 Wheeler trucks, Boats or even Trains to provide supplementary power, and helps to reduce the carbon footprint greatly without compromising performance or reliability of the vehicle. It also saves a huge amount of fuel per year.'
     const image5 = '/assets/golfcart.png'
   return (
-    <Stack direction={'column'} paddingTop={0} sx={{ background: 'linear-gradient(155deg, #ffff, #5F709E)', padding: '16px' }}>
+    <Stack direction={'column'} paddingTop={0} sx={{ background: 'linear-gradient(155deg, #ffff, #5F709E)', padding: '1px' }}>
       
       <p className='text-4xl text-center p-4 font-bold' style={{fontFamily: 'Conthrax Sb'}}>
       Application With Sedi Solar

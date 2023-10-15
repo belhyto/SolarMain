@@ -1,5 +1,6 @@
 import { Stack } from '@mui/material'
 import React from 'react'
+
 //import pv from "../../../public/assets/pvmodule.png"
 import pvVideo from "../../../public/assets/pvVid.mp4"  // Import the video file
 
@@ -11,15 +12,14 @@ const pvImageDiv = {
     color: "#fff",
     border: "2px solid white",
     borderRadius: "40px",
-    padding: "8px",
+    padding: "1px",
     marginBottom: "16px",
     fontSize: "16px"
 }
-
 const PVModules = (props: Props) => {
   return (
     <Stack>
-      <div style={{ background: 'linear-gradient(90deg, #ffff, #5F709E)', padding: "100px" }}>
+      <div style={{ background: 'linear-gradient(90deg, #ffff, #5F709E)', padding: "0px" }}>
         <p className="text-4xl text-center p-4 font-bold" style={{ fontFamily: 'Conthrax Sb' }}>
         SEDI PV modules compared to conventional PV modules
         </p>
@@ -36,4 +36,5 @@ const PVModules = (props: Props) => {
     </Stack>
   )
 }
+
 export default PVModules

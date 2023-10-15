@@ -17,7 +17,7 @@ const Greenhouses = (props: Props) => {
     alignItems={"center"}
     justifyContent={"center"}
     maxWidth={1200}
-    padding={"36px 16px"}
+    padding={"36px 1px"}
   >
         <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>Greenhouses & Eco-Sustainable Houses</p>
         <CardWithCarousel direction='right' images={images1} details={detail1}/>

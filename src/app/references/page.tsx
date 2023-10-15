@@ -24,7 +24,7 @@ const References = (props: Props) => {
       
     >
       <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>References</p>
-      <p className="text-base text-center p-4 font-semibold">By virtue of their ultralight weight, super slim design and flexibility, SEDI PV modules have been used on some very innovative products and projects such as the SEDI Solar Jacket, SEDI Solar Containers and Trailers, Rooftop projects, greenhouses, curved canopies, carports and many other references which demand rugged, reliable, light weight flexible, long life Solar PV modules.s</p>
+      <p className="text-base text-center p-4 font-semibold" style={{padding:'1px 1px'}}>By virtue of their ultralight weight, super slim design and flexibility, SEDI PV modules have been used on some very innovative products and projects such as the SEDI Solar Jacket, SEDI Solar Containers and Trailers, Rooftop projects, greenhouses, curved canopies, carports and many other references which demand rugged, reliable, light weight flexible, long life Solar PV modules.s</p>
       <RooftopSolar />
       <Greenhouses />
       <Telecommunications />

@@ -9,19 +9,24 @@ type Props = {};
 const FooterContainer = styled("footer")`
   background-color: rgb(54, 79, 124);
   backdropFilter: "blur(5px)";
-  padding: 20px;
+  padding: 20px 1px;
   color: white;
-`;
+  width: 100%
+  @media (max-width: 100%) {
+    padding: 20px 50px; /* Adjust the values as needed */
+  }
 
+`;
 const Column = styled("div")`
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2px;
 `;
 const Footer = (props: Props) => {
   return (
     <Box
       height={200}
       sx={{  width: "100%" }}
+      
       marginTop={0}
     >
       <FooterContainer>

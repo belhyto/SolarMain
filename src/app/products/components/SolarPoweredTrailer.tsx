@@ -17,7 +17,7 @@ const SolarPoweredTrailer = (props: Props) => {
     alignItems={"center"}
     justifyContent={"center"}
     maxWidth={1200}
-    padding={"36px 16px"}
+    padding={"36px 1px"}
   >   
         <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>SEDI Solar Trailers</p>
         <p>SEDI ultra-light and ultra-slim PV modules are ideal to be installed on purpose-built box trailers, or carriages which will house the battery, inverter, and even standby generator as per customer specifications. </p>

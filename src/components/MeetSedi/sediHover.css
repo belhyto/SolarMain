@@ -5,6 +5,7 @@
   animation: fadeIn 1s ease-in-out;
   animation-delay: 0.2s; 
 }
+
 .font-medium {
   /* Add any styles you want for the subheading */
   animation: fadeIn 1s ease-in-out;
@@ -15,10 +16,7 @@
   width: 100%;
   min-height: 100vh; /* Use min-height instead of height */
   background-image: linear-gradient(90deg, #5F709E, #F8F9FB);
- 
 }
-
-
 .card-background {
   position: absolute;
   top: 0;

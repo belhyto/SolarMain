@@ -31,9 +31,9 @@ body{
     padding: 1  6px 32px;
 }
 
-@media (max-width:400px) {
+@media (max-width:768px) {
     .home{
-        padding: 8px;
+        padding: 1px;
     }
 
 }

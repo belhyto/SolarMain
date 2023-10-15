@@ -40,7 +40,7 @@ const SediSolarJacket = (props: Props) => {
     alignItems={"center"}
     justifyContent={"center"}
     maxWidth={1200}
-    padding={"36px 16px"}
+    padding={"36px 1px"}
   > 
     <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>SEDI Solar Jacket</p>
     <p className="text-base text-center p-4 font-semibold" style={{textAlign: "justify"}}>The most innovative off-grid solar solution on the market today.</p>

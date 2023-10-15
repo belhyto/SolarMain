@@ -29,7 +29,7 @@ const smallerHoverCardContainerSx = {
 const UniqueTech = (props: Props) => {
   return (
     <Stack direction={"column"} alignItems={"center"} justifyContent={"center"} 
-        style={{ background: "#818FB3", padding: "50px"}}>
+        style={{ background: "#818FB3", padding: "50px 1px"}}>
       <p className="text-4xl text-center p-4 font-bold" style={{fontFamily: 'Conthrax Sb'}}>
       Limitations of conventional PV modules
       </p>

@@ -17,8 +17,8 @@ const FormContainer = styled('div')`
   transform: translate(-50%, -50%);
   z-index: 9999;
   background:rgba(86, 99, 143, 0.9);
-  padding: 20px;
-  max-width: 800px;
+  padding: 20px 1px;
+  max-width: 700px;
   width: 100%;
   border-radius: 8px;
   display: flex; /* Add this to make the children flex items */
