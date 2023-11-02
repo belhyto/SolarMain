@@ -72,7 +72,7 @@ const HoverCard = ({ title, detail, img }: Props) => {
             </Box>
           ) : (
             <>
-              <Image height={100} width={100} src={img} alt="Icon" />
+              <img height={100} width={100} src={img} alt="Icon" />
               <Typography
                 variant="h5"
                 sx={{ paddingTop: '12px', fontFamily: 'sans-serif', fontWeight: 'bold' }}

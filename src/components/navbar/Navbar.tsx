@@ -20,7 +20,6 @@ import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 import { Stack } from '@mui/material'
 import logo from "../../../public/assets/logo.png"
-import logo2 from "../../../public/assets/logo2.png"
 import localFont from "next/font/local";
 // import "../../../public/assets/fonts/"
 type Props = {}
@@ -96,7 +95,7 @@ const Navbar = (props: Props) => {
             <div className="n-logo px-2 flex">
                 <Link href={"/"} className='flex'>
                   <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} gap={2}>
-                    <Image src={logo.src} alt='sedi-solar logo' height={250}
+                    <img src={logo.src} alt='sedi-solar logo' height={250}
   width={200} />
                                         
                   </Stack>

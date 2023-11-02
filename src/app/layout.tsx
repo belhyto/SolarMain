@@ -8,12 +8,9 @@ import Footer from '@/components/footer/Footer';
 import heroBg from "../../public/assets/heroBg.jpg"; // Change this path to the actual path of your heroBg.jpg image
 import FloatingButton from './FloatingContactButton'; // Update the import path if necessary
 const inter = Inter({ subsets: ['latin'] });
-export const metadata = {
-  title: 'SEDI SOLAR',
-  description: ' ',
-};
 
-export default function RootLayout({
+
+export default function RootLayout({ 
   children,
 }: {
   children: React.ReactNode;

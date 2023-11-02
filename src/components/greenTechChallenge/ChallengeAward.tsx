@@ -37,13 +37,12 @@ const ChallengeAward = (props: Props) => {
               },
             }}
           >
-            <Image
+            <img
               width={400}
               height={250}
               src={award.src}
               alt="Award"
               style={{
-                
                 borderRadius: '4px',
               }}
             />
@@ -53,6 +52,7 @@ const ChallengeAward = (props: Props) => {
               {/* Adjust the fontSize and color for the title */}
               <p className="meet-sedi" style={{fontFamily: 'Conthrax Sb'}}>2022 GreenTech Challenge Award</p>
             </Box>
+            <Stack  direction={'column'} sx={{ width: "100%", padding: "50px",paddingTop:{md:1,sm:2,xs:2} }}>
             {showDetails && (
               <>
               
@@ -69,7 +69,7 @@ The GreenTech Challenge European 2022 trophy for the most innovate, green and en
                
               </>
             )}
-
+   </Stack>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Button
                 onClick={handleButtonClick}

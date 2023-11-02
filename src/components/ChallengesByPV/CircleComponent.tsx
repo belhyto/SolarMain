@@ -16,8 +16,10 @@ const paperCss = {
     fontSize: "15px",
     textAlign:"center",
     transition: 'transform 0.3s ease',
-    '@media (max-width: 500px)': {
-      flexBasis: 'calc(100% / 1)',
+    '@media (max-width: 800px)': {
+      flexBasis: 'calc(90% / 1)',
+      width: "200px", // Adjust the width for smaller screens
+      height: "300px",
       '&:hover': {
         transform: 'scale(1)', // Change the hover effect for small screens
       }

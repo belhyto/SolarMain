@@ -4,19 +4,14 @@ import PVModules from '@/components/PVModules/PVModules'
 import Testing from '@/components/Testing/Testing'
 import UniqueTech from '@/components/UniqueTech/UniqueTech'
 import { Stack } from '@mui/material'
-
-
 import React from 'react'
-
 type Props = {}
-
 const Technology = (props: Props) => {
-  return (
-    <Stack direction={"column"}
-    alignItems={"center"}
-    justifyContent={"center"}
-   paddingTop={"50px"}
-   >
+  return ( 
+    <Stack  
+    
+   paddingTop={"90px"}
+   > 
       <ChallengesByPV />
       <PVModules />
       <UniqueTech />
@@ -24,5 +19,4 @@ const Technology = (props: Props) => {
     </Stack>
   )
 }
-
 export default Technology
